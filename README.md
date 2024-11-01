@@ -1,4 +1,3 @@
-```markdown
 # TwitterClone API
 
 Esta é uma API para um clone do Twitter.
