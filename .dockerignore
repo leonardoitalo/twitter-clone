@@ -1,0 +1,24 @@
+# Ignorar arquivos de configuração e dependências locais
+.git
+.gitignore
+__pycache__/
+*.py[cod]
+
+# Ignorar ambiente virtual
+venv/
+.env
+.env.*
+
+# Ignorar arquivos estáticos e de mídia (usar volumes para persistência, se necessário)
+media/
+staticfiles/
+
+# Ignorar arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de teste e de cobertura
+.pytest_cache/
+.tox/
+.coverage
+*.cover

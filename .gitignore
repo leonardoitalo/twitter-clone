@@ -1,0 +1,45 @@
+# Byte-compiled / Python
+*.py[cod]
+__pycache__/
+*.so
+*.pyd
+
+# Virtual environment
+venv/
+.env/   # Ambiente virtual criado com .env (caso exista)
+*.env   # Arquivo de variáveis de ambiente
+
+# Django stuff
+db.sqlite3   # Banco de dados SQLite, caso usado
+media/       # Diretório de arquivos de mídia (uploads dos usuários)
+staticfiles/ # Diretório de arquivos estáticos coletados pelo Django
+
+# Local environment settings
+.env
+.env.*
+
+# Pytest cache
+.pytest_cache/
+.tox/
+.coverage
+coverage.xml
+*.cover
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Celery beat schedule file
+celerybeat-schedule
+
+# VS Code settings
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
