@@ -6,10 +6,11 @@ import os
 # Inicializa o ambiente
 env = environ.Env()
 # Lê o arquivo .env
-environ.Env.read_env(os.path.join(Path(__file__).resolve().parent, '.env'))
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 # Configurações do Django
 SECRET_KEY = env('SECRET_KEY')
