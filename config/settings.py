@@ -27,12 +27,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'rest_framework',
     'rest_framework_simplejwt',
     'tweets',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -41,6 +43,13 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",  # Frontend local
+    # Adicione outras origens permitidas aqui, se necessário
+]
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'config.urls'
 

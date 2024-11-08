@@ -3,7 +3,7 @@ from rest_framework.routers import DefaultRouter
 from .views import RegisterView, LoginView, TweetViewSet, UserProfileViewSet
 
 router = DefaultRouter()
-router.register(r'tweets', TweetViewSet, basename='tweet')
+router.register(r'tweets', TweetViewSet, basename='tweet-list')
 router.register(r'profiles', UserProfileViewSet)
 router.register(r'tweets', TweetViewSet)
 
