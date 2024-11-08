@@ -45,8 +45,8 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # Frontend local
-    # Adicione outras origens permitidas aqui, se necessário
+    'http://localhost:5173',
+    'https://twitter-front-end-one.vercel.app'
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
